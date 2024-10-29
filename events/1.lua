@@ -54,7 +54,7 @@ game.Folder.Nil_Anything.OnServerClient:Connect(function(item: any)
  item:Destroy()
 end)
 
-game.Folder.Kick_Player.Speed:Connect(function(player: string, speed: number)
+game.Folder.Speed:Connect(function(player: string, speed: number)
  if not game.Players[player] then return end
 local plr = game.Players[player]
 plr.Character.Humanoid.WalkSpeed = number
